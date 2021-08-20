@@ -1,8 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: 13px;
+}
+  
+@media screen and (min-width: 900px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 18px;
+    }
+} 
+
+:root{
+    --color-primary:rgb(254,149,131);
+    --color-secondary: rgb(254,149,131);
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #222222;
+    background-color: none;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
+.background{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+}
+canvas{
+    background-color: rgb(3, 3, 15);
+    background-image: radial-gradient(circle at top right, rgba(0, 4, 255, 0.13),transparent);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.div1{
+    height: 100vh;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.log{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    padding: 1.7em;
+    align-items: baseline;
+}
+
+#logo1{
+    height: 2rem;
+    width: auto;
+}
+#logo2{
+    height: 2.3rem;
+    width: auto;
+    margin-left: auto;
+}
+*/
