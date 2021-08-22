@@ -1,70 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html {
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-size: 13px;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 13px;
 }
-  
+
 @media screen and (min-width: 900px) {
-    html {
-      font-size: 16px;
-    }
+  html {
+    font-size: 16px;
   }
-  
-  @media screen and (min-width: 1200px) {
-    html {
-      font-size: 18px;
-    }
-} 
-
-:root{
-    --color-primary:rgb(254,149,131);
-    --color-secondary: rgb(254,149,131);
 }
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: none;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-.background{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.background{
-    width: 100%;
-    height: 100vh;
-}
-canvas{
-    background-color: rgb(3, 3, 15);
-    background-image: radial-gradient(circle at top right, rgba(0, 4, 255, 0.13),transparent);
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
 }
 
-.div1{
-    height: 100vh;
-    width: 100%;
-    background: rgba(20, 20, 20, 0.27);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+:root {
+  --color-primary: rgb(254, 149, 131);
+  --color-secondary: rgb(254, 149, 131);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: none;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+canvas {
+  background-color: rgb(3, 3, 15);
+  background-image: radial-gradient(
+    circle at top right,
+    rgba(0, 4, 255, 0.13),
+    transparent
+  );
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.div1 {
+  height: 100vh;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 /*
@@ -89,3 +88,234 @@ canvas{
     margin-left: auto;
 }
 */
+.in-div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  z-index: 1;
+}
+
+#swt {
+  margin: 0.5rem;
+  color: #faf3f3;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.in-div1 button {
+    cursor: pointer;
+    color: #faf3f3;
+    padding: 0.4rem 0.8rem;
+    background: none;
+    border: 2.7px solid aqua;
+    border-radius: 0.3rem;
+    transition: 0.3s ease;
+}
+
+.in-div1 button:hover {
+    color: rgb(3, 3, 15);
+    background-color: aqua;
+    transform: translate(2px, 0);
+}
+
+.logdiv {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.log{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-width: 25rem;
+    min-height: 30rem;
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+}
+
+.log_head{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  background-color: #faf3f3;
+  opacity: 0.1;
+}
+
+.log_body{
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: rem;
+  flex-direction: column;
+}
+
+.login{
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#login_form{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+}
+
+#login_form .ins{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#login_form .ins input{
+  width: 100%;
+  height: 3rem;
+  border: none;
+  padding-top: 1rem;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #faf3f3 ;
+}
+
+#login_form .ins label{
+  color: #faf3f3;
+  position: absolute;
+  bottom: 0;
+  left: 0.2rem;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+#login_form .ins label::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  border-bottom: 3px solid #25deff;
+  bottom: 0px;
+  left: -0.2rem;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+#login_form .ins .content{
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+#login_form .ins input:focus + .label-class .content, 
+#login_form .ins input:valid + .label-class .content{
+    transform: translate(0,-200%);
+    font-size: 0.9rem;
+}
+
+#login_form .ins input:focus + label::after, 
+#login_form .ins input:valid + label::after{
+    transform: translateX(0%);
+}
+
+/*
+#login_form .ins button{
+  cursor: pointer;
+  padding: 0.3rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #25deff;
+  background-color: transparent;
+  border: 2px solid #25deff;
+  border-radius: 0.27rem;
+  transition: all 0.3s ease;
+}
+
+#login_form .ins button:hover{
+  background-color: #25deff;
+  color: #ffffff;
+}
+*/
+
+.log-div{
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.log-div::before{
+  content: "or";
+  color: #faf3f3;
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button{
+  cursor: pointer;
+  padding: 0.4rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #25deff;
+  background-color: transparent;
+  border: 2px solid #25deff;
+  border-radius: 0.27rem;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: #25deff;
+  color: #ffffff;
+}
+
+.log-div a{
+  position: absolute;
+  bottom: -0.5rem;
+  color: #faf3f3;
+
+}
